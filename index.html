@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2ad4accc32.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Challenge Decodificador de Texto</title>
+
+</head>
+<body>
+    <div class="app-area">
+        <div class="areainput">
+            <div class="cabecalho">
+                <header>
+                 <a href="index.html"><h2>Challenge Alura</h2></a>
+                </header>
+            </div>
+            <section class="input-mensagem">
+                    <label for="textarea"></label>
+                    <textarea name="textarea" id="txt" cols="3" rows="3" placeholder="Digite seu Texo"></textarea>
+                <div class="content-botao">
+                    <div class="apenas-letras">
+                        <img src="imagens/Vector (1).png">
+                        <img src="imagens/Apenas letras minúsculas e sem acento..png">
+                    </div>
+                    <button onclick="criptografar()" class="button-one">Criptografar</button>
+                    <button onclick="descriptografar()" class="button-two">Descriptografar</button>
+                </div>
+
+                
+        </div>        
+            </section>
+            <section class="resultado">
+                    <div class="retangulo">
+                        <div id="not-msg">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="250" height="250"
+                                viewBox="0,0,256,256"
+                                style="fill:#000000;">
+                                <g fill="#0a3871" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M19,3c-5.51172,0 -10,4.48828 -10,10c0,2.39453 0.83984,4.58984 2.25,6.3125l-7.96875,7.96875l1.4375,1.4375l7.96875,-7.96875c1.72266,1.41016 3.91797,2.25 6.3125,2.25c5.51172,0 10,-4.48828 10,-10c0,-5.51172 -4.48828,-10 -10,-10zM19,5c4.42969,0 8,3.57031 8,8c0,4.42969 -3.57031,8 -8,8c-4.42969,0 -8,-3.57031 -8,-8c0,-4.42969 3.57031,-8 8,-8z"></path></g></g>
+                                </svg>
+                            <h3>Nenhuma mensagem encontrada</h3>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        </div>
+                    </div>
+            </section>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <span>© Joseph - 2023</span> <a href="https://github.com/joseph2reis"><i class="fa-brands fa-github fa-2xl"></i></a> <a href="https://www.linkedin.com/in/joseph-reis-2569aa272/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            
+            
+            
+        
+      
+    </footer>
+            
+        
+    <script src="main.js"></script>
+</body>
+</html>

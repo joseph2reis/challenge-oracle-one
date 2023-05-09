@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 3% 3% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    background: #eef2f8;
+}
+
+header a {
+    text-decoration: none;
+    color: #0A3871;
+    
+}
+
+
+.app-area {
+    display: flex;
+    width: 90%;
+    gap: 40px;
+}
+
+header  {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0% 0% 0% 3%;
+    color: #0A3871;
+    
+}
+
+.areainput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    
+}
+
+.input-mensagem {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0% 0% 0% 18%;
+    padding-bottom: 32px;
+}
+
+textarea {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    min-height: 30vh;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    resize: none;
+    background: transparent;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    text-transform: lowercase;
+
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+
+}
+
+textarea::placeholder {
+    text-transform: capitalize ;
+}
+
+
+.retangulo {
+    display: flex;
+    align-items: center;
+    width: 258px;
+    height: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    border-right: outset;
+    
+}
+
+.button-one {
+    cursor: pointer;
+    padding: 24px;
+    gap: 10px;
+    width: 280px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-size: large;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.button-two {
+    
+    cursor: pointer;
+    padding: 24px;
+    gap: 10px;
+    width: 280px;
+    height: 67px;
+    background: #bfcbdb;
+    border-radius: 24px;
+    font-size: large;
+    color: white;
+    
+}
+
+
+#button-copiar {
+    
+    cursor: pointer;
+    padding: 20px;
+    width: 200px;
+    background: #bfcbdb;
+    border-radius: 24px;
+    font-size: large;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+
+
+
+button:hover, #button-copiar:hover {
+    background: rgb(20, 51, 151);
+}
+
+#not-msg h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    padding-top: 25px;
+}
+
+#not-msg p {
+    text-align: center;
+}
+
+.apenas-letras {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.rodape {
+    display: flex;
+}
+
+span {
+    margin: 0 200px;
+}
+
+#resultadotexto {
+    width: 250px;
+    height: 490px;
+    text-align: center;
+}
+
+#not-msg {
+    width: 250px;
+    text-align: center;
+}
+
+#not-msg svg:hover {
+    transform: scale(1.1)
+}
+
+
+a {
+    color: #a3b5ce;
+    padding-left: 10px;
+}
+
+a:hover {
+    color: #0A3871;
+}
+
+/*tablet*/
+
+@media screen and (max-width: 768px) {
+.app-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+
+}
+
+textarea{
+    max-width: 700px;
+    font-size: 2.1em;
+}
+
+.input-mensagem {
+    margin: 0% 0% 0% 3%;
+    height: 700px;
+    width: 100%;
+}
+
+.retangulo {
+    width: 100%;
+    height: 250px;
+}
+
+
+#resultadotexto {
+    max-width: 760px;
+    width: 98%;
+    height: 170px;
+    min-height: 0vh;
+    font-size: 25px;
+}
+
+.button-one, .button-two {
+    width: 49%;
+}
+
+#button-copiar {
+    width: 100%;
+    margin-top: 33px;
+}
+
+#not-msg svg {
+    display: none;
+}
+
+#not-msg {
+    width: 100%;
+    height: 250px;
+}
+
+header {
+    margin-top: 30px;
+}
+
+footer {
+    padding: 35px 0 30px 73px;
+}
+
+
+}
+
+/* Celular */
+
+@media screen and (max-width: 375px) {
+
+body {
+    padding: 0 0 0 0;
+}
+
+.input-mensagem {
+    padding: 10px;
+    margin: 0;
+    height: 500px;
+}
+
+.retangulo {
+    height: 180px;
+}
+
+#not-msg {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+}
+
+.resultado {
+    padding: 10px;
+}
+
+#resultadotexto {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+#not-msg h3 {
+    padding: 0;
+}
+
+
+.button-one, .button-two {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 50px;
+}
+
+footer span {
+    margin: 0;
+}
+
+}
+
+
+
+
+
+
+
+
